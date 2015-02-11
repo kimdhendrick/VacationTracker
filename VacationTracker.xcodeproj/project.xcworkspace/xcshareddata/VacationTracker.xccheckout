@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FCA154F1-5B1B-4691-8BDC-5BD8681A7DF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VacationTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACFE853B605F863EE6C06EA5874833D98CC6356F</key>
+		<string>https://github.com/kimdbarnes/VacationTracker</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VacationTracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACFE853B605F863EE6C06EA5874833D98CC6356F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kimdbarnes/VacationTracker</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACFE853B605F863EE6C06EA5874833D98CC6356F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACFE853B605F863EE6C06EA5874833D98CC6356F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VacationTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
