@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5292DF1A8FE16100CE086D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5292DE1A8FE16100CE086D /* LoginViewController.swift */; };
+		3B5292E11A8FE2AD00CE086D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5292E01A8FE2AC00CE086D /* HomeViewController.swift */; };
 		E8970D9F1A8BE40800B54B54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8970D9E1A8BE40800B54B54 /* AppDelegate.swift */; };
-		E8970DA11A8BE40800B54B54 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8970DA01A8BE40800B54B54 /* FirstViewController.swift */; };
-		E8970DA31A8BE40800B54B54 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8970DA21A8BE40800B54B54 /* SecondViewController.swift */; };
+		E8970DA11A8BE40800B54B54 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8970DA01A8BE40800B54B54 /* OverviewViewController.swift */; };
+		E8970DA31A8BE40800B54B54 /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8970DA21A8BE40800B54B54 /* RequestsViewController.swift */; };
 		E8970DA61A8BE40800B54B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8970DA41A8BE40800B54B54 /* Main.storyboard */; };
 		E8970DA81A8BE40800B54B54 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8970DA71A8BE40800B54B54 /* Images.xcassets */; };
 		E8970DAB1A8BE40800B54B54 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8970DA91A8BE40800B54B54 /* LaunchScreen.xib */; };
@@ -27,11 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B5292DE1A8FE16100CE086D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B5292E01A8FE2AC00CE086D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E8970D991A8BE40800B54B54 /* VacationTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacationTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8970D9D1A8BE40800B54B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8970D9E1A8BE40800B54B54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8970DA01A8BE40800B54B54 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E8970DA21A8BE40800B54B54 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E8970DA01A8BE40800B54B54 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
+		E8970DA21A8BE40800B54B54 /* RequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
 		E8970DA51A8BE40800B54B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8970DA71A8BE40800B54B54 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E8970DAA1A8BE40800B54B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,12 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				E8970D9E1A8BE40800B54B54 /* AppDelegate.swift */,
-				E8970DA01A8BE40800B54B54 /* FirstViewController.swift */,
-				E8970DA21A8BE40800B54B54 /* SecondViewController.swift */,
+				E8970DA01A8BE40800B54B54 /* OverviewViewController.swift */,
+				E8970DA21A8BE40800B54B54 /* RequestsViewController.swift */,
 				E8970DA41A8BE40800B54B54 /* Main.storyboard */,
 				E8970DA71A8BE40800B54B54 /* Images.xcassets */,
 				E8970DA91A8BE40800B54B54 /* LaunchScreen.xib */,
 				E8970D9C1A8BE40800B54B54 /* Supporting Files */,
+				3B5292DE1A8FE16100CE086D /* LoginViewController.swift */,
+				3B5292E01A8FE2AC00CE086D /* HomeViewController.swift */,
 			);
 			path = VacationTracker;
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8970DA31A8BE40800B54B54 /* SecondViewController.swift in Sources */,
+				3B5292E11A8FE2AD00CE086D /* HomeViewController.swift in Sources */,
+				3B5292DF1A8FE16100CE086D /* LoginViewController.swift in Sources */,
+				E8970DA31A8BE40800B54B54 /* RequestsViewController.swift in Sources */,
 				E8970D9F1A8BE40800B54B54 /* AppDelegate.swift in Sources */,
-				E8970DA11A8BE40800B54B54 /* FirstViewController.swift in Sources */,
+				E8970DA11A8BE40800B54B54 /* OverviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				E8970DBC1A8BE40800B54B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8970DBD1A8BE40800B54B54 /* Build configuration list for PBXNativeTarget "VacationTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				E8970DBF1A8BE40800B54B54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

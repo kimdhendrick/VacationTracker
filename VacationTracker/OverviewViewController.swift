@@ -1,6 +1,6 @@
 import UIKit
 
-class FirstViewController: UIViewController {
+class OverviewViewController: UIViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
     
