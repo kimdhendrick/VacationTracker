@@ -135,7 +135,7 @@
         <!--Requests-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="RequestsViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="RequestsViewController" customModule="VacationTracker" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -195,9 +195,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yk6-Xn-oHV">
+                                <rect key="frame" x="16" y="169" width="568" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="jfL-iG-Sy6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-gC-1RI">
+                                <rect key="frame" x="16" y="126" width="568" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="mvs-Ur-G0n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHq-vo-Ca3">
+                                <rect key="frame" x="217" y="59" width="166" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="Jbu-s9-vNg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-37-vW0">
-                                <rect key="frame" x="277" y="285" width="43" height="30"/>
-                                <state key="normal" title="Login!">
+                                <rect key="frame" x="251" y="212" width="99" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="h3I-Ie-qqy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Log in">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -207,9 +236,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="Bzi-37-vW0" secondAttribute="centerX" constant="1.5" id="HzK-yd-NcN"/>
+                            <constraint firstItem="Bzi-37-vW0" firstAttribute="top" secondItem="Yk6-Xn-oHV" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ia-N1-uU4"/>
+                            <constraint firstItem="Yk6-Xn-oHV" firstAttribute="top" secondItem="7dS-gC-1RI" secondAttribute="bottom" constant="8" symbolic="YES" id="1Em-qq-hNJ"/>
+                            <constraint firstItem="OHq-vo-Ca3" firstAttribute="top" secondItem="Ccr-vj-USy" secondAttribute="bottom" constant="39" id="28n-WS-DjP"/>
+                            <constraint firstItem="OHq-vo-Ca3" firstAttribute="centerX" secondItem="7dS-gC-1RI" secondAttribute="centerX" id="4q4-8I-hzh"/>
+                            <constraint firstItem="Bzi-37-vW0" firstAttribute="leading" secondItem="Yk6-Xn-oHV" secondAttribute="trailing" constant="-305" id="6sH-Qy-fhR"/>
+                            <constraint firstItem="7dS-gC-1RI" firstAttribute="trailing" secondItem="42w-C9-lHl" secondAttribute="trailingMargin" id="CK4-aF-wW6"/>
                             <constraint firstAttribute="centerY" secondItem="Bzi-37-vW0" secondAttribute="centerY" id="QuR-qD-0dA"/>
+                            <constraint firstItem="Yk6-Xn-oHV" firstAttribute="centerX" secondItem="Bzi-37-vW0" secondAttribute="centerX" id="YTU-Uz-HMk"/>
+                            <constraint firstItem="Yk6-Xn-oHV" firstAttribute="leading" secondItem="7dS-gC-1RI" secondAttribute="leading" id="fyK-Ps-IcL"/>
+                            <constraint firstAttribute="centerY" secondItem="Bzi-37-vW0" secondAttribute="centerY" constant="178" id="iOj-jk-Qox"/>
+                            <constraint firstItem="Yk6-Xn-oHV" firstAttribute="trailing" secondItem="7dS-gC-1RI" secondAttribute="trailing" id="tnI-OD-9jY"/>
+                            <constraint firstItem="Yk6-Xn-oHV" firstAttribute="leading" secondItem="42w-C9-lHl" secondAttribute="leadingMargin" id="x4l-bU-JbB"/>
+                            <constraint firstItem="7dS-gC-1RI" firstAttribute="top" secondItem="OHq-vo-Ca3" secondAttribute="bottom" constant="25" id="yOk-fo-28u"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6sH-Qy-fhR"/>
+                                <exclude reference="QuR-qD-0dA"/>
+                                <exclude reference="iOj-jk-Qox"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="showDetail" identifier="gotoHomeView" id="rda-nt-0hJ"/>
@@ -217,11 +264,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OeH-6d-qv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-657" y="0.0"/>
+            <point key="canvasLocation" x="-683" y="-11"/>
         </scene>
     </scenes>
     <resources>
-        <image name="overview" width="50" height="50"/>
-        <image name="requests" width="50" height="50"/>
+        <image name="overview" width="22" height="22"/>
+        <image name="requests" width="22" height="22"/>
     </resources>
 </document>
