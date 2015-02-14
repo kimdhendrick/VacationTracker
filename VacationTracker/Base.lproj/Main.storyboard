@@ -183,6 +183,42 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="RIn-fe-dqm">
+            <objects>
+                <viewController id="jA5-sc-w4p" customClass="LoginViewController" customModule="VacationTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ccr-vj-USy"/>
+                        <viewControllerLayoutGuide type="bottom" id="uIb-GJ-rRg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="42w-C9-lHl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-37-vW0">
+                                <rect key="frame" x="277" y="285" width="43" height="30"/>
+                                <state key="normal" title="Login!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="jA5-sc-w4p" eventType="touchUpInside" id="ANA-4w-Sed"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Bzi-37-vW0" secondAttribute="centerX" constant="1.5" id="HzK-yd-NcN"/>
+                            <constraint firstAttribute="centerY" secondItem="Bzi-37-vW0" secondAttribute="centerY" id="QuR-qD-0dA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="49e-Tb-3d3" kind="showDetail" identifier="gotoHomeView" id="rda-nt-0hJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OeH-6d-qv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="0.0"/>
+        </scene>
     </scenes>
     <resources>
         <image name="overview" width="50" height="50"/>
