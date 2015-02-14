@@ -84,14 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				E8970D9E1A8BE40800B54B54 /* AppDelegate.swift */,
+				3B5292DE1A8FE16100CE086D /* LoginViewController.swift */,
+				3B5292E01A8FE2AC00CE086D /* HomeViewController.swift */,
 				E8970DA01A8BE40800B54B54 /* OverviewViewController.swift */,
 				E8970DA21A8BE40800B54B54 /* RequestsViewController.swift */,
 				E8970DA41A8BE40800B54B54 /* Main.storyboard */,
 				E8970DA71A8BE40800B54B54 /* Images.xcassets */,
 				E8970DA91A8BE40800B54B54 /* LaunchScreen.xib */,
 				E8970D9C1A8BE40800B54B54 /* Supporting Files */,
-				3B5292DE1A8FE16100CE086D /* LoginViewController.swift */,
-				3B5292E01A8FE2AC00CE086D /* HomeViewController.swift */,
 			);
 			path = VacationTracker;
 			sourceTree = "<group>";

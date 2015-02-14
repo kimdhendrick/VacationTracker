@@ -1,9 +1,21 @@
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
+
+  @IBOutlet weak var emailTextField: UITextField!
+  @IBOutlet weak var passwordTextField: UITextField!
 
   @IBAction func loginButtonPressed(sender: UIButton) {
-    self.performSegueWithIdentifier("gotoHomeView", sender: self)
+    handleLoginButtonPressed()
+  }
+
+  func textFieldShouldReturn(textField: UITextField) -> Bool {
+    if textField == emailTextField {
+      passwordTextField.becomeFirstResponder()
+    } else if textField == passwordTextField {
+      handleLoginButtonPressed()
+    }
+    return false
   }
 
   override func viewDidLoad() {
@@ -14,13 +26,17 @@ class LoginViewController: UIViewController {
     super.didReceiveMemoryWarning()
   }
 
-  /*
-  // MARK: - Navigation
-
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
+  private func handleLoginButtonPressed() {
+    if emailTextField.text == "kim" {
+      self.performSegueWithIdentifier("gotoHomeView", sender: self)
+    } else {
+      loginFailed("reason")
+    }
   }
-  */
+
+  private func loginFailed(reason: String) {
+    let alert = UIAlertController(title: "Login Failed", message: reason, preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default, handler: nil))
+    self.presentViewController(alert, animated: true, completion: nil)
+  }
 }

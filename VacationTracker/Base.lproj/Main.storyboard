@@ -202,6 +202,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jA5-sc-w4p" id="KKh-OL-edh"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7dS-gC-1RI">
                                 <rect key="frame" x="16" y="126" width="568" height="35"/>
@@ -209,7 +212,10 @@
                                     <constraint firstAttribute="height" constant="35" id="mvs-Ur-G0n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jA5-sc-w4p" id="a9n-14-Jxg"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHq-vo-Ca3">
                                 <rect key="frame" x="217" y="59" width="166" height="42"/>
@@ -259,6 +265,8 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="7dS-gC-1RI" id="yZ0-Ni-z2f"/>
+                        <outlet property="passwordTextField" destination="Yk6-Xn-oHV" id="STC-63-eq9"/>
                         <segue destination="49e-Tb-3d3" kind="showDetail" identifier="gotoHomeView" id="rda-nt-0hJ"/>
                     </connections>
                 </viewController>
