@@ -19,16 +19,3 @@ class HomeViewController: UITabBarController {
     super.didReceiveMemoryWarning()
   }
 }
-
-extension HomeViewController: UITabBarDelegate {
-
-  override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
-
-//    if (item.tag == overviewTabTag) {
-//      //      OverviewService.init().getOverview() { (overview: Overview!) -> () in
-//      //        let overviewController = self.viewControllers[overviewTabTag] as? OverviewViewController
-//      //        overviewController.overview = overview
-//      //      }
-//    }
-  }
-}
