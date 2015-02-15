@@ -5,3 +5,8 @@ func isLoggedIn() -> Bool {
   return prefs.boolForKey("ISLOGGEDIN")
 }
 
+func userEmail() -> String {
+  let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+  return prefs.stringForKey("EMAIL")!
+}
+

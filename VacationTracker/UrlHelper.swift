@@ -16,5 +16,5 @@ func getBaseUrl(caller: AnyObject, baseUrlKey: String = "base_url") -> String {
     }
   }
 
-  return "https://vacationtracker.herokuapp.com/"
+  return "http://vacationtracker.herokuapp.com/"
 }

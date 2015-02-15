@@ -4,7 +4,6 @@ class LoginResponse {
   var success: Bool = false
   var message: String = ""
 
-  var email: String?
   var authenticityToken: String?
 
   let ErrorWhenResponseNotJson: String = "Error contacting server"

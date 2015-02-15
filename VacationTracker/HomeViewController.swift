@@ -2,21 +2,33 @@ import UIKit
 
 class HomeViewController: UITabBarController {
 
+  let overviewTabTag = 0
+  let requestsTabTag = 1
+
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    OverviewService.init().getOverview() { (overview: Overview!) -> () in
+      if let overviewController = self.viewControllers![self.overviewTabTag] as? OverviewViewController {
+        overviewController.loadOverview(overview)
+      }
+    }
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
+}
 
-  /*
-  // MARK: - Navigation
+extension HomeViewController: UITabBarDelegate {
 
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
+  override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem!) {
+
+//    if (item.tag == overviewTabTag) {
+//      //      OverviewService.init().getOverview() { (overview: Overview!) -> () in
+//      //        let overviewController = self.viewControllers[overviewTabTag] as? OverviewViewController
+//      //        overviewController.overview = overview
+//      //      }
+//    }
   }
-  */
 }

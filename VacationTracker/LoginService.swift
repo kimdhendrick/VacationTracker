@@ -18,10 +18,9 @@ class LoginService {
 
     if (loginResponse.success) {
       let prefs = getDefaultPrefs()
-      prefs.setObject(loginResponse.email, forKey: "EMAIL")
+      prefs.setObject(email, forKey: "EMAIL")
       prefs.setObject(loginResponse.authenticityToken, forKey: "AUTHENTICITY_TOKEN")
       prefs.setInteger(1, forKey: "ISLOGGEDIN")
-
       prefs.synchronize()
     }
 
