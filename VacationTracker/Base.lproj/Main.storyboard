@@ -217,15 +217,6 @@
                                     <outlet property="delegate" destination="jA5-sc-w4p" id="a9n-14-Jxg"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHq-vo-Ca3">
-                                <rect key="frame" x="217" y="59" width="166" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="166" id="Jbu-s9-vNg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-37-vW0">
                                 <rect key="frame" x="251" y="212" width="99" height="42"/>
                                 <constraints>
@@ -239,6 +230,15 @@
                                     <action selector="loginButtonPressed:" destination="jA5-sc-w4p" eventType="touchUpInside" id="ANA-4w-Sed"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VacationTracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHq-vo-Ca3">
+                                <rect key="frame" x="144" y="59" width="312" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="Jbu-s9-vNg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

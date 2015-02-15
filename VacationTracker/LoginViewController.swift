@@ -27,10 +27,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
   }
 
   private func handleLoginButtonPressed() {
-    if emailTextField.text == "kim" {
+    let (success, message) = LoginService().logIntoVacationTrackerWith(emailTextField.text, password: passwordTextField.text)
+
+    if success {
       self.performSegueWithIdentifier("gotoHomeView", sender: self)
     } else {
-      loginFailed("reason")
+      loginFailed(message)
     }
   }
 
