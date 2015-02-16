@@ -1,12 +1,13 @@
 # VacationTracker
 
 To do:
-Login screen that redirects on successful login to tab navigation
+X Login screen that redirects on successful login to tab navigation
+- Check and prompt for re-authentication if session is timed out
 
 JSON api
- - Authenticate
- - Get user info
- - Get user profile
+X Authenticate
+X Get user info
+X Get user profile
  - Get PTO requests
 
 Make it pretty
