@@ -186,8 +186,8 @@
                                 <exclude reference="xi8-ub-5J6"/>
                                 <exclude reference="zbi-Vy-0p9"/>
                                 <exclude reference="JuS-m7-olq"/>
-                                <exclude reference="E9R-BV-6vV"/>
                                 <exclude reference="Hd7-ig-Xse"/>
+                                <exclude reference="E9R-BV-6vV"/>
                                 <exclude reference="JDa-2c-Bh6"/>
                                 <exclude reference="bav-E2-qMp"/>
                                 <exclude reference="nty-zF-hlO"/>
@@ -222,21 +222,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Requests" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="224" y="279" width="153" height="42"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xo4-AZ-EaG">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="requestRow" id="Nig-Ya-VP8">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nig-Ya-VP8" id="J0m-bY-PaK">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="startDate-endDate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgN-bc-exr">
+                                                    <rect key="frame" x="8" y="8" width="142" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AP8-yG-BOH">
+                                                    <rect key="frame" x="250" y="8" width="44" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="pTl-Xj-9cb"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="Dmi-aI-tIN"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="Xo4-AZ-EaG" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="6Lg-RR-4Wh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xo4-AZ-EaG" secondAttribute="trailing" constant="-16" id="AWb-tN-qhD"/>
+                            <constraint firstAttribute="centerY" secondItem="Xo4-AZ-EaG" secondAttribute="centerY" constant="14.5" id="mym-iI-LOQ"/>
+                            <constraint firstAttribute="centerX" secondItem="Xo4-AZ-EaG" secondAttribute="centerX" id="vU9-s5-diA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Requests" image="requests" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="requestTableView" destination="Xo4-AZ-EaG" id="eqb-rL-NNO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
